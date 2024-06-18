@@ -96,6 +96,20 @@ git checkout master
 git pull
 git merge feat-20240000-xxx
 
+
+// git tag
+git tag <tagname>
+git tag <tagname> commit_id 
+git tag <tagname> -a xxx -m 
+
+git tag -d <tagname>
+
+git show <tagname>
+
+git push origin <tagname>
+git push origin -d <tagname>
+
+
 ```
 
 
@@ -141,4 +155,11 @@ git cherry-pick
 
 
 git pull git fetch --rebase 区别
+
+
+git config --global alias.br branch
+git br
+
+
+gitk
 ```
