@@ -21,7 +21,7 @@ git branch
 ```shell
 // 不管什么情况下,分支一定基于master 切换到本地分支master
 git checkout master
-// 拉取最新的master
+// 拉取最新的master  //分支管理 excel表格
 git pull
 git checkout -b feat-20240000-xxx
 
@@ -41,14 +41,59 @@ git log --oneline
 ```shell
 // 1. 本地自测,本地联调 只需要切换 env 文件的,代理服务器
 // 2. dev 分支自测
+
+// 上传到远程分支,保存
+git add .
+git commit
+git push // --set-upstream
+
+
 git checout dev
 git pull
 git merge feat-20240000-xxx
-git push //git push origin dev:dev git push origin dev
+git push 
+
+// git push --set-upstream origin dev
+// git push -u origin dev
+// git push origin dev:dev git push origin dev
 ```
 
+### 自测改bug
 
+```shell
+git checkout feat-20240000-xxx
+....working...
+git add .
+git commit -m ''
+git push // git push -u origin xxx
 
+git checkout dev
+git merge feat-20240000-xxx
+
+```
+
+### 3. 提测
+
+```shell
+git checkout stage
+git pull
+git merge feat-20240000-xxx
+
+// 写提测单 两处地方写
+// 改plant状态
+// 通知测试 重新部署jenkins
+
+```
+
+### 4. 上线前一天
+
+```shell
+
+git checkout master 
+git pull
+git merge feat-20240000-xxx
+
+```
 
 
 
@@ -58,6 +103,7 @@ git push //git push origin dev:dev git push origin dev
 
 ## 可能用到的命令
 
+```shell
 git add 
 git add .
 git add -A
@@ -71,3 +117,22 @@ git commit -m ''
 
 git config --list
 core.editor="D:\Software\notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+
+// 
+git stash list
+git stash save xxx
+git stash pop
+git stash apply 
+git stash drop
+
+
+git revert
+// 回退 时光机
+git reset --hard commit_id
+git log
+git reflog
+
+
+git cherry-pick 
+git pull git fetch --rebase
+```
