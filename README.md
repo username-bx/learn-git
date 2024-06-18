@@ -53,6 +53,9 @@ git pull
 git merge feat-20240000-xxx
 git push 
 
+// git pull 提示 no tracking infomation
+//git branch --set-upstream-to xxx origin/xxx
+
 // git push --set-upstream origin dev
 // git push -u origin dev
 // git push origin dev:dev git push origin dev
@@ -118,7 +121,7 @@ git commit -m ''
 git config --list
 core.editor="D:\Software\notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
 
-// 
+// 临时储存一下 没有必要commit的时候
 git stash list
 git stash save xxx
 git stash pop
@@ -132,7 +135,10 @@ git reset --hard commit_id
 git log
 git reflog
 
-
+// master 临时一个修改bug
 git cherry-pick 
-git pull git fetch --rebase
+
+
+
+git pull git fetch --rebase 区别
 ```
