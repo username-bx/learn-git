@@ -121,19 +121,35 @@ git push origin -d <tagname>
 ## 可能用到的命令 commit  123123123213
 
 ```shell
+// 删除本地分支
+git branch -d <name>
+git branch -D <name>
+// 本地分支改名
 git branch -m <oldname> <newname>
+// 删除远程分支
 git push -d origin <oldname>
+// 显示关联关系
+git remote show origin
+git remote prune origin
+git fetch -p
 
+// add . add -A v2.0都一样
 git add 
 git add .
 git add -A
 
+// 清除暂存区 git add 的反向
 git restore --stageed ./README.md
 git restore --staged .
 git restore .
+// 清除工作区
+git checkout .
 
+
+// 提交
 git commit // 默认是vim编辑器
 git commit -m ''
+// 撤销提交 合并commit 不会删除工作区
 git reset --soft HEAD^
 git reset --soft HEAD~1
 git reset --soft HEAD~2
@@ -149,14 +165,14 @@ git stash pop
 git stash apply 
 git stash drop
 
-
+// 回退 一个commit
 git revert
-// 回退 时光机
+// 回退过去 时光机
 git reset --hard commit_id
 git log
 git reflog
 
-// master 临时一个修改bug
+// master 临时一个修改bug 使用cherrypick拿到当前分支 不是同一个commit_id
 git cherry-pick 
 
 
