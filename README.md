@@ -121,6 +121,9 @@ git push origin -d <tagname>
 ## 可能用到的命令 commit  123123123213
 
 ```shell
+git branch -m <oldname> <newname>
+git push -d origin <oldname>
+
 git add 
 git add .
 git add -A
@@ -132,10 +135,9 @@ git restore .
 git commit // 默认是vim编辑器
 git commit -m ''
 git reset --soft HEAD^
-cm1
-cm2
-cm3
-cm4
+git reset --soft HEAD~1
+git reset --soft HEAD~2
+git reset --soft commit_id
 
 git config --list
 core.editor="D:\Software\notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
