@@ -118,7 +118,7 @@ git push origin -d <tagname>
 
 
 
-## 可能用到的命令
+## 可能用到的命令 commit  123123123213
 
 ```shell
 git add 
@@ -131,6 +131,11 @@ git restore .
 
 git commit // 默认是vim编辑器
 git commit -m ''
+git reset --soft HEAD^
+cm1
+cm2
+cm3
+cm4
 
 git config --list
 core.editor="D:\Software\notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
