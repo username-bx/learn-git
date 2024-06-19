@@ -198,4 +198,12 @@ git br
 
 
 gitk
+
+
+
+git merge 的三个合并参数模式：
+-ff 自动合并模式：当合并的分支为当前分支的后代的，那么会自动执行 --ff (Fast-forward) 模式，如果不匹配则执行 --no-ff（non-Fast-forward） 合并模式
+--no-ff 非 Fast-forward 模式：在任何情况下都会创建新的 commit 进行多方合并（及时被合并的分支为自己的直接后代）
+--ff-onlu Fast-forward 模式：只会按照 Fast-forward 模式进行合并，如果不符合条件（并非当前分支的直接后代），则会拒绝合并请求并且推出
+以下是关于 --ff, --no-ff, --ff-only 三种模式的官方说明（使用 git merge --helo 即可查看）：
 ```
