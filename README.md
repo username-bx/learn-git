@@ -30,6 +30,11 @@ git checkout origin/master (git branch -a)
 git checout -b feat-20240000-xxx
 ```
 
+
+>前端分支名称管理
+>https://mankacojp-my.sharepoint.com/:x:/r/personal/tf_shih_manka_co_jp/_layouts/15/Doc.aspx?sourcedoc=%7B82FDD630-3CDB-452E-8D32-69B83519D59C%7D&file=01-%E5%89%8D%E7%AB%AF%E5%88%86%E6%94%AF%E5%90%8D%E7%A7%B0%E7%AE%A1%E7%90%86%EF%BC%88%E6%96%B9%E4%BE%BF%E8%BF%AD%E4%BB%A3%E5%90%88%E5%B9%B6%E4%BB%A3%E7%A0%81%EF%BC%89.xlsx&action=default&mobileredirect=true
+![alt text](image.png)
+
 ### 2. 开发过程中,一定不要合并其它人的分支,dev分支,test分支.
 
 ```shell
@@ -87,7 +92,8 @@ git merge feat-20240000-xxx
 // 通知测试 重新部署jenkins
 
 ```
-
+![alt text](image-1.png)
+![alt text](image-2.png)
 ### 4. 上线前一天
 
 ```shell
