@@ -156,6 +156,7 @@ git reset --soft HEAD~2
 git reset --soft commit_id
 
 git config --list
+// 设置编辑器
 core.editor="D:\Software\notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
 
 // 临时储存一下 没有必要commit的时候
