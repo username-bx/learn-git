@@ -163,7 +163,13 @@ git reset --soft commit_id
 
 git config --list
 // 设置编辑器
+git config --global core.editor Code
+git config --global core.editor notepad++
+git config --global core.editor "'E:\\Software\\Notepad++\\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 core.editor="D:\Software\notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+// 设置 commit 模板
+git config --global commit.template D:/commit_template
+// C:\Users\Administrator\.gitconfig
 
 // 临时储存一下 没有必要commit的时候
 git stash list
