@@ -119,9 +119,13 @@ git push origin -d <tagname>
 ```
 
 
+## git 配置多仓库
+git remote -v
+git remote add <name> http://
+git remote remove <name>
 
-
-
+## 快速切换分支 并设置 track
+git checkout -b <local_new_name> --track <name>/<romote_name>
 
 
 ## 可能用到的命令 commit  123123123213
